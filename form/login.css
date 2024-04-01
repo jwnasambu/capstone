@@ -1,0 +1,260 @@
+/* body style */
+body {
+  margin: 0 auto;
+  background-image:linear-gradient(#ffffff, rgb(0, 0, 0) ) 
+}
+
+/* card-wrapper style */
+.login-wrapper {
+  /* padding: 2rem 0; */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: normal;
+}
+
+/* h1 style */
+.form h1 {
+  text-align: center;
+  letter-spacing: 0.015625rem;
+  margin: 3rem 0 2.375rem;
+  color: var(--Primary-900, #007A87);
+  font-family: "Sofia Pro";
+  font-size: 2.125rem; 
+}
+ 
+/* form style */
+.form {
+  position: center;
+  width: 60%;
+  max-width: 46.875rem;
+  /* padding:  2rem 0; */
+  background: #FCFBF7;
+  border-radius: 0.625rem;
+  color: #180f0f; 
+  box-shadow: 0 0.9375rem 1.5625rem rgba(0, 0, 0, 0.5);
+}
+ 
+/* form-input-group style */
+.form-input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 18.75rem;
+  margin: 0 auto;
+}
+
+/* CSS for form-input-group label */
+.form-input-group label {
+  display: inline-block;
+  width: 110%;
+  text-align: left;
+  margin-bottom: 0.625rem;
+  color: var(--Greys-1500, #020202);
+  font-size: 10px;
+}
+
+input::placeholder {
+  color: black;
+  font-size: 9px;
+  font-style: italic;
+}
+
+/* CSS for form-input-group input */
+.form-input-group input {
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.9375rem;
+  background-color: #fdfff5;
+  border-radius: 1.3125rem;
+  border: 0.0625rem solid gray;
+  color: #070303e9;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-input-group input:focus + label,
+.form-input-group input:valid + label {
+  transform: translateY(-1rem);
+  color: #888;
+  font-size: 0.7rem;
+}
+
+.form-input-group input:hover,
+.form-input-group input:focus {
+    border-color: gray;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 55%;
+  right: 0.625rem;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+#togglePassword:hover {
+  color: gray;
+}
+
+.btn-login {
+  text-align: center;
+  margin-top: 0.9375rem;
+  width: 21.875rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.125rem auto 0; 
+}
+
+.btn-login button[type="submit"] {
+  width: 85%;
+  height: 85%;
+  margin: auto;
+  border: 0.0625rem solid gray;
+  border-radius: 2.5rem;
+  color: #ffffff;   
+  background: var(--Primary-800, #0390A0);
+}
+  
+  
+/* Media query for tablet view */
+@media screen and (max-width: 48rem) {
+  .toggle {
+    margin-left: 2%;
+  }
+}
+ 
+/* signup-link style */
+.signup-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+ 
+.signup-link,
+.signup-link a {
+  color: #060101cb;
+  font-size: 12px;
+}
+ 
+.signup-link a {
+  color: #a34040;
+  font-weight: 400;
+  padding-left: 0.625rem; 
+}
+ 
+.signup-link a:hover {
+  color: rgba(4, 72, 46, 0.9);
+}
+
+/* horizontal style */
+.horizontal-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.horizontal1,
+.horizontal2 {
+  width: 100px;
+}
+
+.horizontal-container div {
+  margin: 0 15px;
+  color: white;
+}
+
+.horizontal {
+  position: relative;
+  z-index: 1;
+  color: #000000;
+  padding: 5px 10px;
+}
+
+.horizontal-container div p {
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  margin-left: 160px;
+}
+
+.btn1,
+.btn2 {
+  width: 10rem;
+  height: 3rem;
+  display: inline-flex; /* Change this line */
+  flex-direction: row;
+  gap: 2px; /* Adjusted gap value */
+  align-items: center;
+  justify-content: center;
+  margin: 0.125rem 0; /* Adjusted margin */
+  position: relative;
+}
+
+
+.btn1 input[type="button"],
+.btn2 input[type="button"] {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  border: 0.0625rem solid gray;
+  border-radius: 2.5rem;
+  font-size: small;
+}
+
+.btn1 input[type="button"]{
+  color: #1976D2;
+}
+.btn2 input[type="button"] {
+ color: black
+}
+
+.btn1 input[type="button"]:hover,
+.btn2 input[type="button"]:hover {
+  border-color: black;
+}
+
+.Google,
+.apple-icon {
+  position: absolute;
+  left: 0.4rem;
+  height: 40%;
+  width: auto;
+}
+
+.button-container input:hover {
+  border-color: #ffffff;
+} 
+
+footer {
+  margin-top: 1.875rem;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 1.25rem;
+  background: var(--Primary-900, #007A87);
+}
+ 
+.footer-message {
+  box-sizing: border-box;
+  margin-block: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+ 
+.footer-message a {
+  color: rgba(128, 128, 128, 0.882); 
+}
+ 
+.footer-message a:hover {
+  color: rgba(128, 128, 128, 0.882); 
+}

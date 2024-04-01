@@ -1,0 +1,79 @@
+body{
+  background-color: #fffcec;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container{
+  flex: 1;
+  justify-content: center;
+  margin: 30px;
+  padding: 10px;
+}
+
+.sign_up_form{
+  color: #00755E;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+
+h2{
+  margin: 70px auto auto auto;
+  padding-bottom: 50px;
+  letter-spacing: -50px;
+}
+ 
+label{
+  color: rgb(11, 1, 1);
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.input-1, .input-2{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  margin-top: 10px;
+  background-color: fff;
+  padding: 15px 100px 15px 15px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #a7a7a7;
+}
+
+input:hover{
+  border-color: gray;
+}
+
+a {
+  color: #00755E;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 13px;
+}
