@@ -9,9 +9,19 @@ body {
   /* padding: 2rem 0; */
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   row-gap: normal;
+  height: 100%;
+}
+/* 
+.form-image {
+ width: 40%;
+}; */
+ 
+.form-image > img { 
+  width: 30rem;
+  height: 30rem;
 }
 
 /* h1 style */
@@ -235,8 +245,9 @@ input::placeholder {
   border-color: #ffffff;
 } 
 
+
 footer {
-  margin-top: 1.875rem;
+  /* margin-top: 1.875rem; */
   margin-bottom: 0;
   text-align: center;
   padding: 1.25rem;
