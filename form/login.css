@@ -6,8 +6,7 @@ body {
 
 /* card-wrapper style */
 .login-wrapper {
-  /* padding: 2rem 0; */
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -21,7 +20,7 @@ body {
  
 .form-image > img { 
   width: 30rem;
-  height: 30rem;
+  height: 30rem
 }
 
 /* h1 style */
@@ -41,7 +40,7 @@ body {
   max-width: 46.875rem;
   /* padding:  2rem 0; */
   background: #FCFBF7;
-  border-radius: 0.625rem;
+  /* border-radius: 0.625rem; */
   color: #180f0f; 
   box-shadow: 0 0.9375rem 1.5625rem rgba(0, 0, 0, 0.5);
 }

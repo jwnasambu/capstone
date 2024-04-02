@@ -5,7 +5,17 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.sign{
+/* card-wrapper style */
+.signup-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  row-gap: normal;
+  height: 100%;
+}
+
+.btn-signup {
   display: flex;
   flex-direction: row;
 }
@@ -199,4 +209,3 @@ footer {
 .footer-message a:hover {
   color: rgba(128, 128, 128, 0.882); 
 }
-
