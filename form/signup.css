@@ -15,6 +15,11 @@ body{
   height: 100%;
 }
 
+.form-image > img { 
+  width: fit-content
+  /* height: 35rem; */
+}
+
 .btn-signup {
   display: flex;
   flex-direction: row;
@@ -59,7 +64,7 @@ label{
   gap: 20px;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
 }
