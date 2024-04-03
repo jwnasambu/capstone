@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,147 +8,99 @@
     <link rel="stylesheet" href="./signup.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-
 <body>
    <div class="wrapper">
-
     <div class="signup-wrapper">
-
         <div class="form-image">
             <img src="/assets/images/iPhone 13 mini - 1.jpg" alt="Image Description">
         </div>
 
-        <form action="submit" class="form">
+        <form id="signup-form" class="form" action="submit">
             
-        <h2 class="sign_up_form">Sign up to get started</h2>
+            <h2 class="sign_up_form">Sign up to get started</h2>
 
-        <div class="input-1">
-        <div class="form-input-group">
-            <label for="firstName"><b>First Name</b></label>
-            <input type="text" placeholder="First Name" id="firstName" name="firstName">
-        </div>
-
-        <div class="form-input-group">
-            <label for="surname"><b>Surname</b></label>
-            <input type="text" placeholder="Surname" id="surname" name="surname">
-        </div>
-        </div>
-
-        <div class="form">
-            <label for="email"><b>Email</b></label>
-            <input type="email" placeholder="Enter Email" id="email" name="email">
-        </div>
-
-        <div class="input-2">
-            <div class="form-input-group">
-            <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter password" id="password" name="password">
-        </div>
-
-        <div class="form-input-group">
-            <label for="confirmPassword"><b>Confirm Password</b></label>
-            <input type="text" placeholder="Confirm Password" id="confirmPassword" name="confirmPassword">
+            <div class="input-1">
+                <div class="form-input-group">
+                    <label for="firstName"><b>First Name</b></label>
+                    <input type="text" placeholder="First Name" id="firstName" name="firstName">
+                </div>
+                <div class="form-input-group">
+                    <label for="surname"><b>Surname</b></label>
+                    <input type="text" placeholder="Surname" id="surname" name="surname">
+                </div>
             </div>
-        </div>
 
-        <div class="form">
-            <label for="dateOfBirth"><b>D.O.B</b></label>
-            <input type="date" placeholder="Date of Birth" id="dateOfBirth" name="dateOfBirth">
-        </div>
-
-        <div class="input-1">
-            <div class="form-input-group">
-            <label for="firstName"><b>First Name</b></label>
-            <input type="text" placeholder="First Name" id="firstName" name="firstName">
-        </div>
-
-        <div class="form-input-group">
-            <label for="surname"><b>Surname</b></label>
-            <input type="text" placeholder="Surname" id="surname" name="surname">
+            <div class="form">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" id="email" name="email">
             </div>
-        </div>
 
-        <div class="form">
-            <label for="email"><b>Email</b></label>
-            <input type="email" placeholder="Enter Email" id="email" name="email">
-        </div>
-
-        <div class="input-2">
-            <div class="form-input-group">
-            <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter password" id="password" name="password">
-        </div>
-
-        <div class="form-input-group">
-            <label for="confirmPassword"><b>Confirm Password</b></label>
-            <input type="text" placeholder="Confirm Password" id="confirmPassword" name="confirmPassword">
+            <div class="input-2">
+                <div class="form-input-group">
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter password" id="password" name="password">
+                </div>
+                <div class="form-input-group">
+                    <label for="confirmPassword"><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Confirm Password" id="confirmPassword" name="confirmPassword">
+                </div>
             </div>
-        </div>
 
-        <div class="form">
-            <label for="dateOfBirth"><b>D.O.B</b></label>
-            <input type="date" placeholder="Date of Birth" id="dateOfBirth" name="dateOfBirth">
-        </div>
-
-        <div class="input-3">
-            <div class="Gender">
-            <label for="gender"><b>Gender</b></label>
-            <input type="text" placeholder="Gender" id="firstName" name="firstName">
-        </div>
-
-        <div class="Location">
-            <label for="surname"><b>Location</b></label>
-            <input type="text" placeholder="Location" id="location" name="location">
+            <div class="form">
+                <label for="dateOfBirth"><b>D.O.B</b></label>
+                <input type="date" placeholder="Date of Birth" id="dateOfBirth" name="dateOfBirth">
             </div>
-        </div>
 
-        <div class="input-4">
-            <div class="Country code">
-            <label for="country code"><b>Country code</b></label>
-            <input type="text" placeholder="country code" id="country code" name="country code">
-        </div>
-
-        <div class="Mobile Number">
-            <label for="mobile Number"><b>Mobile Number</b></label>
-            <input type="text" placeholder="Mobile Number" id="mobile Number" name="mobile Number">
+            <div class="input-3">
+                <div class="Gender">
+                    <label for="gender"><b>Gender</b></label>
+                    <input type="text" placeholder="Gender" id="gender" name="gender">
+                </div>
+                <div class="Location">
+                    <label for="location"><b>Location</b></label>
+                    <input type="text" placeholder="Location" id="location" name="location">
+                </div>
             </div>
-        </div>
 
-        <div class="btn-signup">
-            <button type="submit">Sign Up</button>
-        </div>
-
-        <div class="account-container">
-            Already have an account? <a href="./login.html" class="login-link">Log in</a>.
-        </div>
-
-        <div class="horizontal-container">
-            <div><hr class="horizontal1" /></div>
-            <div><p class="horizontal">OR</p></div>
-            <div><hr class="horizontal2" /></div>
-        </div>
-
-        <div class="button-container">
-            <div class="btn1">
-            <input type="button" value="Login with Google">
-            <img src="/assets/logos/flat-color-icons_google.svg" alt="Google Icon" class="Google">
-        </div>
-
-        <div class="btn2">
-            <input type="button" value="Continue with Apple">
-            <img src="/assets/logos/mdi_apple.svg" alt="Apple Icon" class="apple-icon">
+            <div class="input-4">
+                <div class="Country code">
+                    <label for="country code"><b>Country code</b></label>
+                    <input type="text" placeholder="Country code" id="countryCode" name="countryCode">
+                </div>
+                <div class="Mobile Number">
+                    <label for="mobileNumber"><b>Mobile Number</b></label>
+                    <input type="text" placeholder="Mobile Number" id="mobileNumber" name="mobileNumber">
+                </div>
             </div>
-        </div>
+
+            <div class="btn-signup">
+                <button type="submit">Sign Up</button>
+            </div>
+
+            <div class="account-container">
+                Already have an account? <a href="./login.html" class="login-link">Log in</a>.
+            </div>
+
+            <div class="horizontal-container">
+                <div><hr class="horizontal1" /></div>
+                <div><p class="horizontal">OR</p></div>
+                <div><hr class="horizontal2" /></div>
+            </div>
+
+            <div class="button-container">
+                <div class="btn1">
+                    <input type="button" value="Login with Google">
+                    <img src="/assets/logos/flat-color-icons_google.svg" alt="Google Icon" class="Google">
+                </div>
+                <div class="btn2">
+                    <input type="button" value="Continue with Apple">
+                    <img src="/assets/logos/mdi_apple.svg" alt="Apple Icon" class="apple-icon">
+                </div>
+            </div>
 
         </form>
-        <!-- <footer>
-           <div class="footer-message">
-               <p>Copyright@Medlink-All rights reserved | Private policy.</p>
-            </div>
-        </footer> -->
     </div>
    </div>
-   <script src="signup.html"></script>
+   <script src="./signup.js"></script>
 </body>
-
 </html>

@@ -1,22 +1,27 @@
 /* body style */
 body {
   margin: 0 auto;
-  background-image:linear-gradient(#ffffff, rgb(0, 0, 0) ) 
 }
 
-/* card-wrapper style */
-.login-wrapper {
-  width: 100%;
+.wrapper {
   display: flex;
-  justify-content: right;
-  row-gap: normal;
-  height: 100%;
+  flex-direction: column;
+  height: 100vh;
+  
+}
+
+.login-wrapper {
+  padding: 0 10em;
+  flex: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
 }
  
 .form-image > img { 
-  width: 20rem;
-  height: 35rem;
-}
+  height: 46rem;
+} 
 
 /* h1 style */
 .form h1 {
@@ -30,10 +35,15 @@ body {
  
 /* form style */
 .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   position: center;
-  width: 60%;
+  width: 100%;
   max-width: 46.875rem;
-  padding:  rem 0;
+  padding:   0;
   background: #FCFBF7;
   color: #180f0f; 
   box-shadow: 0 0.9375rem 1.5625rem rgba(0, 0, 0, 0.5);
@@ -187,20 +197,21 @@ input::placeholder {
 
 .button-container {
   display: flex;
-  margin-left: 160px;
+ justify-content: center;
 }
 
 .btn1,
 .btn2 {
   width: 10rem;
   height: 2rem;
-  display: inline-flex; /* Change this line */
+  display: inline-flex;
   flex-direction: row;
-  gap: 2px; /* Adjusted gap value */
+  gap: 2px;
   align-items: center;
   justify-content: center;
-  margin: 0.125rem 0; /* Adjusted margin */
+  margin: 0.125rem 0;
   position: relative;
+   
 }
 
 
@@ -212,7 +223,7 @@ input::placeholder {
   background-color: #ffffff;
   border: 0.0625rem solid gray;
   border-radius: 0.5rem;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .btn1 input[type="button"]{
@@ -230,7 +241,7 @@ input::placeholder {
 .Google,
 .apple-icon {
   position: absolute;
-  left: 0.7rem;
+  left: 1rem;
   height: 50%;
   width: auto;
 }
