@@ -1,0 +1,222 @@
+body{
+  background-color: #fffcec;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* card-wrapper style */
+.signup-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  row-gap: normal;
+  height: 100%;
+}
+
+.form-image > img { 
+  width: fit-content
+}
+
+.btn-signup {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container{
+  flex: 1;
+  justify-content: center;
+  margin: 30px;
+  padding: 10px;
+}
+
+.sign_up_form{
+  color: #00755E;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+
+h2{
+  margin: 70px auto auto auto;
+  padding-bottom: 50px;
+  letter-spacing: -50px;
+}
+ 
+label{
+  color: rgb(11, 1, 1);
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.input-1, .input-2, .input-3, .input-4 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.input-1 input[type="text"],
+.input-2 input[type="text"],
+.input-3 input[type="text"],
+.input-4 input[type="text"] {
+  width: 10rem; /* Adjust the width as needed */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  margin-top: 10px;
+  background-color: fff;
+  padding: 15px 100px 15px 15px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #a7a7a7;
+}
+
+input:hover{
+  border-color: gray;
+}
+
+a {
+  color: #00755E;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+.btn-signup {
+  text-align: center;
+  margin-top: 0.9375rem;
+  width: 21.875rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.125rem auto 0; 
+}
+
+.btn-signup button[type="submit"] {
+  width: 85%;
+  height: 85%;
+  margin: auto;
+  border: 0.0625rem solid gray;
+  border-radius: 2.5rem;
+  color: #ffffff;   
+  background: var(--Primary-800, #0390A0);
+}
+
+/* horizontal style */
+.horizontal-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.horizontal1,
+.horizontal2 {
+  width: 100px;
+}
+
+.horizontal-container div {
+  margin: 0 15px;
+  color: white;
+}
+
+.horizontal {
+  position: relative;
+  z-index: 1;
+  color: #000000;
+  padding: 5px 10px;
+}
+
+.horizontal-container div p {
+  margin: 0;
+}
+
+.btn1,
+.btn2 {
+  width: 10rem;
+  height: 3rem;
+  display: inline-flex; /* Change this line */
+  flex-direction: row;
+  gap: 2px; /* Adjusted gap value */
+  align-items: center;
+  justify-content: center;
+  margin: 0.125rem 0; /* Adjusted margin */
+  position: relative;
+}
+
+
+.btn1 input[type="button"],
+.btn2 input[type="button"] {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  border: 0.0625rem solid gray;
+  border-radius: 2.5rem;
+  font-size: small;
+}
+
+.btn1 input[type="button"]{
+  color: #1976D2;
+}
+.btn2 input[type="button"] {
+ color: black
+}
+
+.btn1 input[type="button"]:hover,
+.btn2 input[type="button"]:hover {
+  border-color: black;
+}
+
+.Google,
+.apple-icon {
+  position: absolute;
+  left: 0.4rem;
+  height: 40%;
+  width: auto;
+}
+
+.button-container input:hover {
+  border-color: #ffffff;
+} 
+
+footer {
+  margin-top: 1.875rem;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 1.25rem;
+  background: var(--Primary-900, #007A87);
+}
+ 
+.footer-message {
+  box-sizing: border-box;
+  margin-block: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+ 
+.footer-message a {
+  color: rgba(128, 128, 128, 0.882); 
+}
+ 
+.footer-message a:hover {
+  color: rgba(128, 128, 128, 0.882); 
+}
