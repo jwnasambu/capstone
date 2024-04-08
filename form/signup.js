@@ -73,6 +73,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     // Here you may want to send the data to the server using AJAX or any other method
     alert('Form submitted successfully');
     
+    
 });
 
 
