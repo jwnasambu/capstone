@@ -7,7 +7,7 @@
     <title>Signup</title>
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.ico?v2">
     <link rel="stylesheet" href="./signup.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                         <input type="password" id="password" name="password">
                         <i class="far fa-eye-slash" id="togglePassword1"></i>
                     </div>
-                    
+
                     <div class="confirmPassword">
                         <label for="confirmPassword"><b>Confirm Password</b></label>
                         <input type="password" id="confirmPassword" name="confirmPassword">
@@ -63,11 +63,23 @@
                 <div class="input-3">
                     <div class="Gender">
                         <label for="gender"><b>Gender</b></label>
-                        <input type="text" id="gender" name="gender">
-                    </div>
+                        <input id="gender" name="gender" onclick="showGenderOptions()" list="genderList">
+                        <datalist id="genderList">
+                            <option value="Male">
+                            <option value="Female">
+                            <option value="Others">
+                        </datalist>
+                   </div>
+                   
                     <div class="Location">
                         <label for="location"><b>Location</b></label>
-                        <input type="text" id="location" name="location" onclick="showAfricanCountries()">
+                        <input id="location" name="location" onclick="showAfricanCountries()" list="locationList">
+                        <datalist id="locationList">
+                            <option value="Cameroon">
+                            <option value="Kenya">
+                            <option value="Nigeria">
+                            <option value="Zambia">
+                        </datalist>
                     </div>
                 </div>
 
@@ -93,11 +105,21 @@
                         <input type="number" id="weight" name="weight" min="2.5" max="220">
                     </div>
 
-
                     <div class="bloodType">
                         <label for="bloodType"><b>Blood Type</b></label>
-                        <input type="text" id="bloodType" name="bloodType">
+                        <input list="bloodTypes" id="bloodTypeInput" name="bloodType">
+                        <datalist id="bloodTypes">
+                            <option value="A+">
+                            <option value="A-">
+                            <option value="B+">
+                            <option value="B-">
+                            <option value="AB+">
+                            <option value="AB-">
+                            <option value="O+">
+                            <option value="O-">
+                        </datalist>
                     </div>
+
                 </div>
 
                 <div class="btn-signup">
@@ -123,13 +145,13 @@
                 <div class="button-container">
                     <div class="btn1">
                         <img src="/assets/logos/flat-color-icons_google.svg" alt="Google Icon">
-                         <p>Login with Google</p>
+                        <p>Login with Google</p>
 
                     </div>
 
                     <div class="btn2">
-                        <img src="/assets/logos/mdi_apple.svg" alt="Apple Icon" >
-                        <p >Continue with Apple</p>
+                        <img src="/assets/logos/mdi_apple.svg" alt="Apple Icon">
+                        <p>Continue with Apple</p>
                     </div>
                 </div>
 
