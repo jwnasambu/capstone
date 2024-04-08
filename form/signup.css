@@ -22,7 +22,7 @@ body {
 /* form style */
 .form {
   height: 100%;
-  width: 400px; /* or any other fixed width you prefer */
+  width: 400px;
   max-width: 80%;
   padding: 40px;
   background: #FCFBF7;
@@ -30,101 +30,47 @@ body {
   box-shadow: 0 0.9375rem 1.5625rem rgba(0, 0, 0, 0.5);
 }
 
-
 /* form-image style */
 .form-image img {
-        height: 1500px;
-        width: 400px;
-    }
+  height: 1500px;
+  width: 400px;
+  }
 
 /* heading style */
 h2 {
   color: #00755E;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -3px;
+  text-align: center;
 }
 
-.btn-signup {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-container{
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-}
-
-.container{
-  flex: 1;
-  justify-content: center;
-  margin: 30px;
-  padding: 10px;
-}
-
-.account-container {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-
+/* label style */
 label{
    display: inline-block;
   width: 110%;
   text-align: left;
-  /* margin-bottom: 0.625rem; */
   color: var(--Greys-1500, #020202);
   font-size: 12px;
 }
 
-#togglePassword {
-  position: absolute;
-  top: 50%;
-  right: 0.625rem;
-  transform: translateY(-50%);
-  color: #888;
-}
-
-#togglePassword:hover {
-  color: gray;
-}
-
-
-input::placeholder {
-  color: black;
-  font-size: 9px;
-  font-style: italic;
-}
-
-.dateOfBirth input::placeholder {
-  color: black;
-  font-size: 9px;
-  font-style: italic;
-}
-
-
+/* input style */
 .input-1, .input-2, .input-3, .input-4 {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-
-
-input{
+input {
   margin-top: 10px;
-  background-color: fff;
-  padding: 15px 100px 15px 15px;
+  background-color: #fff;
+  padding: 15px 15px 15px 15px;
   box-sizing: border-box;
   border: 1px solid gray;
   border-radius: 4px;
   margin-bottom: 20px;
-  font-size: 15px;
-  font-weight: bold;
-  color: #a7a7a7;
+  font-size: 12px;
   width: 100%;
   height: 20%;
 }
@@ -151,9 +97,15 @@ input{
     margin-right: 10px;
 }
 
-
 input:hover{
   border-color: gray;
+}
+
+/* account-container style */
+.account-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 a {
@@ -163,17 +115,17 @@ a {
   font-size: 13px;
 }
 
+/* signup button */
 .btn-signup {
   text-align: center;
   margin-top: 0.9375rem;
-  width: 30rem;
   height: 3rem;
   display: flex;
   margin: 0.1rem auto ; 
 }
 
 .btn-signup button[type="submit"] {
-  width: 85%;
+  width: 100%;
   height: 70%;
   margin: auto 0.1 auto 1px;
   border: 0.0625rem solid gray;
@@ -212,61 +164,40 @@ a {
   margin: 0;
 }
 
-
+/* button container style */
 .button-container {
   display: flex;
- justify-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .btn1,
 .btn2 {
   width: 15rem;
   height: 2rem;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  gap: 2px;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
   margin: 0.125rem 0;
-  position: relative;
-   
-}
-
-
-.btn1 input[type="button"],
-.btn2 input[type="button"] {
-  width: 90%;
-  height: 90%;
-  margin: auto;
-  background-color: #ffffff;
   border: 0.0625rem solid gray;
   border-radius: 0.5rem;
   font-size: 11px;
 }
 
-.btn1 input[type="button"]{
+.btn1 img, .btn2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn1 p, .btn2 p {
+  margin-left: 8px;
+}
+
+.btn1 p {
   color: #1976D2;
 }
-.btn2 input[type="button"] {
- color: black
-}
-
-.btn1 input[type="button"]:hover,
-.btn2 input[type="button"]:hover {
-  border-color: hsla(0, 0%, 50%, 0.959);
-}
-
-.Google,
-.apple-icon {
-  position: absolute;
-  left: 1rem;
-  height: 50%;
-  width: auto;
-}
-
-.button-container input:hover {
-  border-color: #ffffff;
-} 
 
 /* footer style */
 footer {

@@ -26,11 +26,11 @@
                 <h2 class="sign_up_form">Sign up to get started</h2>
 
                 <div class="input-1">
-                    <div class="form-input-group">
+                    <div class="firstName">
                         <label for="firstName"><b>First Name</b></label>
                         <input type="text" id="firstName" name="firstName">
                     </div>
-                    <div class="form-input-group">
+                    <div class="Surname">
                         <label for="surname"><b>Surname</b></label>
                         <input type="text" id="surname" name="surname">
                     </div>
@@ -42,13 +42,13 @@
                 </div>
 
                 <div class="input-2">
-                    <div class="form-input-group">
+                    <div class="password">
                         <label for="password"><b>Password</b></label>
                         <input type="password" id="password" name="password">
                         <i class="far fa-eye-slash" id="togglePassword1"
                             onclick="togglePassword('password', 'togglePassword1')"></i>
                     </div>
-                    <div class="form-input-group">
+                    <div class="confirmPassword">
                         <label for="confirmPassword"><b>Confirm Password</b></label>
                         <input type="password" id="confirmPassword" name="confirmPassword">
                         <i class="far fa-eye-slash" id="togglePassword2"
@@ -85,14 +85,15 @@
 
                 <div class="vitals">
                     <div class="height">
-                        <label for="height"><b>Height</b></label>
-                        <input type="number" id="height" name="height">
+                        <label for="height"><b>Height (cm)</b></label>
+                        <input type="number" id="height" name="height" min="45" max="240">
                     </div>
 
-                    <div class="Weight">
-                        <label for="weight"><b>weight</b></label>
-                        <input type="" id="weight" name="weight">
+                    <div class="weight">
+                        <label for="weight"><b>Weight (kgs)</b></label>
+                        <input type="number" id="weight" name="weight" min="2.5" max="220">
                     </div>
+
 
                     <div class="bloodType">
                         <label for="bloodType"><b>Blood Type</b></label>
@@ -121,17 +122,16 @@
                 </div>
 
                 <div class="button-container">
-
                     <div class="btn1">
-                        <input type="button" value="Login with Google">
-                        <img src="/assets/logos/flat-color-icons_google.svg" alt="Google Icon" class="Google">
+                        <img src="/assets/logos/flat-color-icons_google.svg" alt="Google Icon">
+                         <p>Login with Google</p>
+
                     </div>
 
                     <div class="btn2">
-                        <input type="button" value="Continue with Apple">
-                        <img src="/assets/logos/mdi_apple.svg" alt="Apple Icon" class="apple-icon">
+                        <img src="/assets/logos/mdi_apple.svg" alt="Apple Icon" >
+                        <p >Continue with Apple</p>
                     </div>
-
                 </div>
 
             </form>
