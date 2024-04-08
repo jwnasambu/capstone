@@ -214,18 +214,13 @@ a {
 
 
 .button-container {
-    display: flex;
-    justify-content: center;
-}
-
-.btn1,.button-container {
   display: flex;
  justify-content: center;
 }
 
 .btn1,
 .btn2 {
-  width: 10rem;
+  width: 15rem;
   height: 2rem;
   display: inline-flex;
   flex-direction: row;
