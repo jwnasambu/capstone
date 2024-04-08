@@ -1,106 +1,83 @@
-
 /* body style */
 body {
-  margin: 0 auto;
+   margin: 0 auto;
 }
 
+/* wrapper style */
 .wrapper {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  
 }
 
+/* sign-up wrapper style */
 .signup-wrapper {
   padding: 0 10em;
-  flex: 80%;
+  flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
 }
- 
-.form-image > img { 
-  height: 46rem;
-} 
 
-/* h1 style */
-.form h1 {
-  text-align: center;
-  letter-spacing: 0.015625rem;
-  margin: 3rem 0 2.375rem;
-  color: var(--Primary-900, #007A87);
-  font-family: "Sofia Pro";
-  font-size: 2.125rem; 
-}
- 
 /* form style */
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100%;
-  position: center;
-  width: 100%;
-  max-width: 46.875rem;
-  padding:   0;
+  width: 400px; /* or any other fixed width you prefer */
+  max-width: 80%;
+  padding: 40px;
   background: #FCFBF7;
-  color: #180f0f; 
+  color: #180f0f;
   box-shadow: 0 0.9375rem 1.5625rem rgba(0, 0, 0, 0.5);
 }
- 
-/* form-input-group style */
-.form-input-group {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 18.75rem;
-  margin: 0 auto;
-  padding-bottom: 10px;
+
+
+/* form-image style */
+.form-image img {
+        height: 1500px;
+        width: 400px;
+    }
+
+/* heading style */
+h2 {
+  color: #00755E;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -3px;
 }
 
-/* CSS for form-input-group label */
-.form-input-group label {
-  display: inline-block;
+.btn-signup {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container{
+  flex: 1;
+  justify-content: center;
+  margin: 30px;
+  padding: 10px;
+}
+
+.account-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+label{
+   display: inline-block;
   width: 110%;
   text-align: left;
-  margin-bottom: 0.625rem;
+  /* margin-bottom: 0.625rem; */
   color: var(--Greys-1500, #020202);
-  font-size: 10px;
-}
-
-input::placeholder {
-  color: black;
-  font-size: 9px;
-  font-style: italic;
-}
-
-/* CSS for form-input-group input */
-.form-input-group input {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 0.9375rem;
-  background-color: #fdfff5;
-  border-radius: .3125rem;
-  border: 0.0625rem solid gray;
-  color: #070303e9;
-  padding: 0.5rem;
-  box-sizing: border-box;
-  transition: border-color 0.3s;
-}
-
-.form-input-group input:focus + label,
-.form-input-group input:valid + label {
-  transform: translateY(-1rem);
-  color: #888;
-  font-size: 0.7rem;
-}
-
-.form-input-group input:hover,
-.form-input-group input:focus {
-    border-color: gray;
+  font-size: 12px;
 }
 
 #togglePassword {
@@ -115,57 +92,96 @@ input::placeholder {
   color: gray;
 }
 
+
+input::placeholder {
+  color: black;
+  font-size: 9px;
+  font-style: italic;
+}
+
+.dateOfBirth input::placeholder {
+  color: black;
+  font-size: 9px;
+  font-style: italic;
+}
+
+
+.input-1, .input-2, .input-3, .input-4 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+
+input{
+  margin-top: 10px;
+  background-color: fff;
+  padding: 15px 100px 15px 15px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #a7a7a7;
+  width: 100%;
+  height: 20%;
+}
+
+.dateOfBirth, .email {
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 55px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #a7a7a7;
+  height: 40px;
+}
+
+.vitals {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.vital-item {
+    flex: 1;
+    margin-right: 10px;
+}
+
+
+input:hover{
+  border-color: gray;
+}
+
+a {
+  color: #00755E;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
 .btn-signup {
   text-align: center;
-  margin-top: 2.9375rem;
+  margin-top: 0.9375rem;
   width: 21.875rem;
   height: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0.125rem auto 0;
-  padding-top: 50px;
+  margin: 0.125rem auto 0; 
 }
 
 .btn-signup button[type="submit"] {
   width: 85%;
-  height: 50%;
+  height: 85%;
   margin: auto;
   border: 0.0625rem solid gray;
-  border-radius: 0.6rem;
+  border-radius: 2.5rem;
   color: #ffffff;   
   background: var(--Primary-800, #0390A0);
-}
-  
-  
-/* Media query for tablet view */
-@media screen and (max-width: 48rem) {
-  .toggle {
-    margin-left: 2%;
-  }
-}
- 
-/* login-link style */
-.login-link {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.25rem;
-}
- 
-.login-link,
-.login-link a {
-  color: #060101cb;
-  font-size: 12px;
-}
- 
-.login-link a {
-  color: #a34040;
-  font-weight: 400;
-  padding-left: 0.625rem; 
-}
- 
-.login-link a:hover {
-  color: rgba(4, 72, 46, 0.9);
 }
 
 /* horizontal style */
@@ -173,15 +189,17 @@ input::placeholder {
   display: flex;
   justify-content: center; 
   align-items: center;
-  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .horizontal1,
 .horizontal2 {
-  width: 120px;
+  width: 150px;
 }
 
 .horizontal-container div {
+  margin: 0 15px;
   color: white;
 }
 
@@ -189,89 +207,92 @@ input::placeholder {
   position: relative;
   z-index: 1;
   color: #000000;
-  padding: 5px 15px;
+  padding: 5px 10px;
 }
 
 .horizontal-container div p {
   margin: 0;
 }
 
+
 .button-container {
-  display: flex;
- justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .btn1,
 .btn2 {
-  width: 10rem;
-  height: 2rem;
-  display: inline-flex;
-  flex-direction: row;
-  gap: 2px;
-  align-items: center;
-  justify-content: center;
-  margin: 0.125rem 0;
-  position: relative;
-   
+    margin: 0 0.6rem;
+    position: relative;
+    flex-grow: 3;
 }
-
 
 .btn1 input[type="button"],
 .btn2 input[type="button"] {
-  width: 90%;
-  height: 90%;
-  margin: auto;
-  background-color: #ffffff;
-  border: 0.0625rem solid gray;
-  border-radius: 0.5rem;
-  font-size: 11px;
+    height: 90%;
+    margin: auto;
+    background-color: #ffffff;
+    border: 0.0625rem solid gray;
+    border-radius: 1rem;
+    font-size: 11px;
+    text-align: center; /* Center the text */
+    padding: 0; /* Remove default padding */
 }
 
-.btn1 input[type="button"]{
-  color: #1976D2;
+.btn1 input[type="button"] {
+    color: #1976D2;
 }
+
 .btn2 input[type="button"] {
- color: black
+    color: black;
 }
 
 .btn1 input[type="button"]:hover,
 .btn2 input[type="button"]:hover {
-  border-color: hsla(0, 0%, 50%, 0.959);
+    border-color: hsla(0, 0%, 50%, 0.959);
+}
+
+.icon-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1.5rem; /* Adjust the spacing between icon and text */
 }
 
 .Google,
 .apple-icon {
-  position: absolute;
-  left: 1rem;
-  height: 50%;
-  width: auto;
+    height: 50%; /* Adjust the size of the icons */
+    width: auto; /* Let the browser calculate the width */
+    margin-right: 0.2rem; /* Adjust the spacing between icon and text */
 }
 
-.button-container input:hover {
-  border-color: #ffffff;
-} 
+.icon-text img {
+    vertical-align: middle; /* Aligns the image vertically with the text */
+    margin-right: 0.1px; 
+}
 
 /* footer style */
 footer {
-  margin-bottom: 6.875rem;
-  margin-bottom: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
   padding: 1.25rem;
   background: var(--Primary-900, #007A87);
 }
- 
+
 .footer-message {
   box-sizing: border-box;
-  margin-block: 0;
+  margin: 0;
   font-size: 0.8rem;
   font-weight: 400;
   color: #ffffff;
 }
- 
+
 .footer-message a {
   color: rgba(128, 128, 128, 0.882); 
 }
- 
+
 .footer-message a:hover {
   color: rgba(128, 128, 128, 0.882); 
 }
