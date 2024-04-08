@@ -97,9 +97,33 @@ input {
     margin-right: 10px;
 }
 
+/* password toggle style */
 input:hover{
   border-color: gray;
 }
+
+.input-2 {
+    position: relative;
+}
+
+.password,
+.confirmPassword {
+    position: relative;
+}
+
+.password i,
+.confirmPassword i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input[type="password"] {
+    padding-right: 30px; 
+}
+
 
 /* account-container style */
 .account-container {
@@ -225,3 +249,4 @@ footer {
 .footer-message a:hover {
   color: rgba(128, 128, 128, 0.882); 
 }
+
