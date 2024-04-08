@@ -218,55 +218,60 @@ a {
     justify-content: center;
 }
 
+.btn1,.button-container {
+  display: flex;
+ justify-content: center;
+}
+
 .btn1,
 .btn2 {
-    margin: 0 0.6rem;
-    position: relative;
-    flex-grow: 3;
+  width: 10rem;
+  height: 2rem;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  margin: 0.125rem 0;
+  position: relative;
+   
 }
+
 
 .btn1 input[type="button"],
 .btn2 input[type="button"] {
-    height: 90%;
-    margin: auto;
-    background-color: #ffffff;
-    border: 0.0625rem solid gray;
-    border-radius: 1rem;
-    font-size: 11px;
-    text-align: center; /* Center the text */
-    padding: 0; /* Remove default padding */
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  border: 0.0625rem solid gray;
+  border-radius: 0.5rem;
+  font-size: 11px;
 }
 
-.btn1 input[type="button"] {
-    color: #1976D2;
+.btn1 input[type="button"]{
+  color: #1976D2;
 }
-
 .btn2 input[type="button"] {
-    color: black;
+ color: black
 }
 
 .btn1 input[type="button"]:hover,
 .btn2 input[type="button"]:hover {
-    border-color: hsla(0, 0%, 50%, 0.959);
-}
-
-.icon-text {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 1.5rem; /* Adjust the spacing between icon and text */
+  border-color: hsla(0, 0%, 50%, 0.959);
 }
 
 .Google,
 .apple-icon {
-    height: 50%; /* Adjust the size of the icons */
-    width: auto; /* Let the browser calculate the width */
-    margin-right: 0.2rem; /* Adjust the spacing between icon and text */
+  position: absolute;
+  left: 1rem;
+  height: 50%;
+  width: auto;
 }
 
-.icon-text img {
-    vertical-align: middle; /* Aligns the image vertically with the text */
-    margin-right: 0.1px; 
-}
+.button-container input:hover {
+  border-color: #ffffff;
+} 
 
 /* footer style */
 footer {
