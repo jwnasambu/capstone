@@ -1,6 +1,6 @@
 /* body style */
 body {
-   margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* wrapper style */
@@ -34,7 +34,7 @@ body {
 .form-image img {
   height: 1500px;
   width: 400px;
-  }
+}
 
 /* heading style */
 h2 {
@@ -48,7 +48,7 @@ h2 {
 
 /* label style */
 label{
-   display: inline-block;
+  display: inline-block;
   width: 110%;
   text-align: left;
   color: var(--Greys-1500, #020202);
@@ -77,24 +77,21 @@ input {
 
 .dateOfBirth, .email {
   margin-top: 10px;
-  background-color: #fff;
   border-radius: 4px;
   margin-bottom: 55px;
   font-size: 15px;
-  font-weight: bold;
-  color: #a7a7a7;
   height: 40px;
 }
 
 .vitals {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 .vital-item {
-    flex: 1;
-    margin-right: 10px;
+  flex: 1;
+  margin-right: 10px;
 }
 
 /* password toggle style */
@@ -103,25 +100,29 @@ input:hover{
 }
 
 .input-2 {
-    position: relative;
+  position: relative;
 }
 
 .password,
 .confirmPassword {
-    position: relative;
+  position: relative;
 }
 
 .password i,
 .confirmPassword i {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 input[type="password"] {
-    padding-right: 30px; 
+  padding-right: 30px; 
+}
+
+.far.fa-eye-slash, .fa-eye {
+  color: red;
 }
 
 /* account-container style */
@@ -129,13 +130,6 @@ input[type="password"] {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 10px;
-}
-
-a {
-  color: #00755E;
-  background-color: transparent;
-  text-decoration: underline;
-  font-size: 13px;
 }
 
 /* signup button */
@@ -155,6 +149,14 @@ a {
   border-radius: 0.5rem;
   color: #ffffff;   
   background: var(--Primary-800, #0390A0);
+}
+
+/* Login-link style */
+a {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 13px;
 }
 
 /* horizontal style */
@@ -248,3 +250,4 @@ footer {
 .footer-message a:hover {
   color: rgba(128, 128, 128, 0.882); 
 }
+
