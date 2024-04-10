@@ -173,6 +173,7 @@ input::placeholder {
   justify-content: center; 
   align-items: center;
   padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .horizontal1,
@@ -195,60 +196,40 @@ input::placeholder {
   margin: 0;
 }
 
+/* button style */
 .button-container {
   display: flex;
- justify-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .btn1,
 .btn2 {
-  width: 10rem;
+  width: 9rem;
   height: 2rem;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  gap: 2px;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
   margin: 0.125rem 0;
-  position: relative;
-   
-}
-
-
-.btn1 input[type="button"],
-.btn2 input[type="button"] {
-  width: 90%;
-  height: 90%;
-  margin: auto;
-  background-color: #ffffff;
   border: 0.0625rem solid gray;
   border-radius: 0.5rem;
   font-size: 11px;
 }
 
-.btn1 input[type="button"]{
+.btn1 img, .btn2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn1 p, .btn2 p {
+  margin-left: 8px;
+}
+
+.btn1 p {
   color: #1976D2;
 }
-.btn2 input[type="button"] {
- color: black
-}
-
-.btn1 input[type="button"]:hover,
-.btn2 input[type="button"]:hover {
-  border-color: hsla(0, 0%, 50%, 0.959);
-}
-
-.Google,
-.apple-icon {
-  position: absolute;
-  left: 1rem;
-  height: 50%;
-  width: auto;
-}
-
-.button-container input:hover {
-  border-color: #ffffff;
-} 
 
 /* footer style */
 footer {

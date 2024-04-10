@@ -96,7 +96,17 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please select your blood type');
             return;
         }
+        
+        // Additional validation for height and weight fields to ensure they are not empty
+        if (document.getElementById("height").value.trim() === '') {
+            alert("Please enter your height");
+            return;
+        }
 
+        if (document.getElementById("weight").value.trim() === '') {
+            alert("Please enter your weight");
+            return;
+        }
         // If all validation passes, you can submit the form
         // Here you may want to send the data to the server using AJAX or any other method
         alert('Form submitted successfully');
