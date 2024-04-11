@@ -29,20 +29,20 @@ beforeEach(() => {
   });
 });
 
-test('Form submission', () => {
+test('Form submission with valid data', () => {
   // Mock the alert function
   window.alert = jest.fn();
 
-  // Fill the form fields
+  // Fill the form fields with valid data
   document.getElementById('firstName').value = 'Jane';
   document.getElementById('surname').value = 'Moraa';
   document.getElementById('email').value = 'jane@yahoo.com';
-  document.getElementById('password').value = 'Admin123';
-  document.getElementById('confirmPassword').value = 'Admin123';
+  document.getElementById('password').value = 'Admin123!';
+  document.getElementById('confirmPassword').value = 'Admin123!';
   document.getElementById('dateOfBirth').value = '1990-01-01';
   document.getElementById('gender').value = 'female';
   document.getElementById('location').value = 'Nakuru';
-  document.getElementById('countryCode').value = '+254';
+  document.getElementById('countryCode').value = 'Kenya';
   document.getElementById('mobileNumber').value = '1234567890';
   document.getElementById('height').value = '180';
   document.getElementById('weight').value = '70';
@@ -53,4 +53,56 @@ test('Form submission', () => {
 
   // Check if alert was called with the success message
   expect(window.alert).toHaveBeenCalledWith('Form submitted successfully');
+});
+
+test('Form submission with weak password', () => {
+  // Mock the alert function
+  window.alert = jest.fn();
+
+  // Fill the form fields with weak password
+  document.getElementById('firstName').value = 'Jane';
+  document.getElementById('surname').value = 'Moraa';
+  document.getElementById('email').value = 'jane@yahoo.com';
+  document.getElementById('password').value = 'admin';
+  document.getElementById('confirmPassword').value = 'admin';
+  document.getElementById('dateOfBirth').value = '1990-01-01';
+  document.getElementById('gender').value = 'female';
+  document.getElementById('location').value = 'Nakuru';
+  document.getElementById('countryCode').value = 'Kenya';
+  document.getElementById('mobileNumber').value = '1234567890';
+  document.getElementById('height').value = '180';
+  document.getElementById('weight').value = '70';
+  document.getElementById('bloodTypeInput').value = 'A+';
+
+  // Submit the form
+  document.getElementById('signup-form').dispatchEvent(new window.Event('submit'));
+
+  // Check if alert was called with the error message
+  expect(window.alert).toHaveBeenCalledWith('Please enter a stronger password');
+});
+
+test('Form submission with mismatched passwords', () => {
+  // Mock the alert function
+  window.alert = jest.fn();
+
+  // Fill the form fields with mismatched passwords
+  document.getElementById('firstName').value = 'Jane';
+  document.getElementById('surname').value = 'Moraa';
+  document.getElementById('email').value = 'jane@yahoo.com';
+  document.getElementById('password').value = 'Admin123!';
+  document.getElementById('confirmPassword').value = 'Admin12345'; 
+  document.getElementById('dateOfBirth').value = '1990-01-01';
+  document.getElementById('gender').value = 'female';
+  document.getElementById('location').value = 'Nakuru';
+  document.getElementById('countryCode').value = 'Kenya';
+  document.getElementById('mobileNumber').value = '1234567890';
+  document.getElementById('height').value = '180';
+  document.getElementById('weight').value = '70';
+  document.getElementById('bloodTypeInput').value = 'A+';
+
+  // Submit the form
+  document.getElementById('signup-form').dispatchEvent(new window.Event('submit'));
+
+  // Check if alert was called with the error message
+  expect(window.alert).toHaveBeenCalledWith('Passwords do not match');
 });

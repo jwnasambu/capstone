@@ -1,14 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Password visibility toggler
-    document.getElementById('togglePassword1').addEventListener('click', function() {
+    document.getElementById('togglePassword1').addEventListener('click', function () {
         togglePasswordVisibility('password', 'togglePassword1');
     });
 
-    document.getElementById('togglePassword2').addEventListener('click', function() {
+    document.getElementById('togglePassword2').addEventListener('click', function () {
         togglePasswordVisibility('confirmPassword', 'togglePassword2');
     });
 
-    document.getElementById('signup-form').addEventListener('submit', function(event) {
+    document.getElementById('signup-form').addEventListener('submit', function (event) {
         event.preventDefault();
 
         // Get form values
@@ -46,6 +46,17 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please enter your password');
             return;
         }
+        if (!isStrongPassword(password)) {
+            alert('Please enter a stronger password');
+            return;
+        }
+
+        function isStrongPassword(password) {
+            // Regular expression for basic password strength validation
+            var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            return passwordRegex.test(password);
+        }
+
 
         if (confirmPassword.trim() === '') {
             alert('Please confirm your password');
@@ -82,6 +93,18 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
+        if (!isValidMobileNumber(mobileNumber)) {
+            alert('Please enter a valid mobile number');
+            return;
+        }
+
+        function isValidMobileNumber(mobileNumber) {
+            // Regular expression for basic mobile number validation
+            var mobileRegex = /^\d{10}$/; // Assuming a 10-digit format
+            return mobileRegex.test(mobileNumber);
+        }
+
+
         if (height < 45 || height > 240) {
             alert("Height must be between 45 and 240 cm");
             return;
@@ -96,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please select your blood type');
             return;
         }
-        
+
         // Additional validation for height and weight fields to ensure they are not empty
         if (document.getElementById("height").value.trim() === '') {
             alert("Please enter your height");
@@ -107,8 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert("Please enter your weight");
             return;
         }
-        // If all validation passes, you can submit the form
-        // Here you may want to send the data to the server using AJAX or any other method
+        
         alert('Form submitted successfully');
     });
 
@@ -116,11 +138,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var input = document.querySelector("#mobileNumber");
     var iti = window.intlTelInput(input, {
         separateDialCode: true,
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // Load utils.js
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" 
     });
 
     // Update country code field on change
-    input.addEventListener("countrychange", function() {
+    input.addEventListener("countrychange", function () {
         document.getElementById("countryCode").value = "+" + iti.getSelectedCountryData().dialCode;
     });
 
