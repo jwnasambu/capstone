@@ -26,5 +26,13 @@ describe("Login Form Validation", () => {
         expect(validateUser("wrongemail@yahoo.com", "wrongPassword")).toBe(false);
     });
 
-    // You can add more test cases for other functions or interactions as needed
+    // Test the toggle password functionality
+    test("togglePassword should change the type of password input field", () => {
+        const togglePassword = window.document.getElementById("togglePassword");
+        togglePassword.click();
+        const passwordInput = window.document.getElementById("psw");
+        expect(passwordInput.getAttribute("type")).toBe("text");
+        togglePassword.click();
+        expect(passwordInput.getAttribute("type")).toBe("password");
+    });
 });
