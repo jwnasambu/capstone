@@ -1,43 +1,57 @@
+// Form validation and submission
+const form = document.querySelector("form");
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const passwordField = document.getElementById("psw");
-            const togglePasswordButton = document.getElementById("togglePassword");
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-            // Toggle password visibility
-            togglePasswordButton.addEventListener("click", function (event) {
-                event.preventDefault();
-                const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
-                passwordField.setAttribute("type", type);
-                this.classList.toggle("fa-eye-slash");
-                this.classList.toggle("fa-eye");
-            });
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("psw").value;
 
-            // Form validation and submission
-            const form = document.querySelector("form");
+    if (email.trim() === "") {
+        alert("Please enter your email.");
+        return;
+    }
 
-            form.addEventListener("submit", function (event) {
-                event.preventDefault();
+    if (password.trim() === "") {
+        alert("Please enter your password.");
+        return;
+    }
 
-                const email = document.getElementById("email").value;
-                const password = document.getElementById("psw").value;
+    // Simulated backend validation
+    const isValidUser = validateUser(email, password);
 
-                if (email.trim() === "") {
-                    alert("Please enter your email.");
-                    return;
-                }
+    if (!isValidUser) {
+        alert("Invalid email or password.");
+        return;
+    }
 
-                if (password.trim() === "") {
-                    alert("Please enter your password.");
-                    return;
-                }
+    console.log("Email:", email);
+    console.log("Password:", password);
+});
 
-                // Replace the following line with your form submission logic
-                // For demonstration, here we just log the form data
-                console.log("Email:", email);
-                console.log("Password:", password);
+// Toggle password visibility
+const togglePassword = document.getElementById("togglePassword");
+const passwordInput = document.getElementById("psw");
 
-                // Optionally, you can submit the form here:
-                // form.submit();
-            });
-        });
+togglePassword.addEventListener("click", function () {
+    const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+    passwordInput.setAttribute("type", type);
+    this.classList.toggle("fa-eye-slash");
+});
+
+// Simulated backend user validation
+function validateUser(email, password) {
+    const users = [
+        { email: "jane@yahoo.com", password: "Admin123" },
+        { email: "user2@yahoo.com", password: "123Admin123" }
+    ];
+
+    // Check if there's a user with the provided email and password
+    return users.some(user => user.email === email && user.password === password);
+}
+
+// Export the validateUser function
+module.exports = {
+    validateUser: validateUser
+};
 
